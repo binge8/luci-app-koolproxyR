@@ -114,11 +114,11 @@ update_rules() {
 	         wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
             	 wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
 		 wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
-	         wget 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
-            	 wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
-	         wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
-		 wget 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt' -q -O $KP_DIR/data/rules/anti-ad.txt
-            	 wget 'https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
+	         wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/yhosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
+            	 wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
+	         wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
+		 wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/antiad.txt' -q -O $KP_DIR/data/rules/anti-ad.txt
+            	 wget 'https://raw.sevencdn.com/project-lede/koolproxy/main/rules/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
                  easylist_rules_local=`cat /usr/share/koolproxy/data/rules/easylistchina.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
 		 yhosts_rules_local=`cat /usr/share/koolproxy/data/rules/yhosts.txt  | sed -n '1p' | awk '{print $2,$3}'`
